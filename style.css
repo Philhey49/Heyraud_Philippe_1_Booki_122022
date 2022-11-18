@@ -1,0 +1,159 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    max-width: 1400px;
+}
+h1{
+    font-size: x-large;
+}
+h2{
+    font-size: large;
+    color: black;
+}
+h3{
+    font-size: medium;
+}
+p{
+    color: grey;
+}
+p a{
+    color: grey;
+}
+.flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.decoration {
+    text-decoration: none;
+}
+.colorBlue{
+    color: #0065FC;
+}
+.colorBlueLight{
+    color: #deebff;
+}
+.colorGrey{
+    color: #f2f2f2;
+}
+.backBlue{
+    background-color: #0065FC;
+}
+.backBlueLight{
+    background-color: #deebff;
+}
+.backGrey{
+    background-color: #F2F2F2;
+}
+.borderNone{
+    border: none;
+}
+/*HEADER*/
+header{
+    height: auto;
+    min-width: 992px;
+}
+header nav{
+    justify-content: flex-end;
+    padding: 10px;
+}
+header ul{
+    list-style: none;
+}
+header li{
+    margin-right: 50px;
+}
+header a{
+    color: black;
+}
+header a:hover{
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
+    padding-top: 10px;
+}
+#logo img{
+    width: 62px;
+    height: 29px;
+    margin: auto;
+    padding: 10px;
+}
+/*MAIN*/
+/*Recherche*/
+.borderSearch{
+    width: 400px;
+    border-radius: 10px;
+}
+.inputSearch{
+    width: 230px;
+    height: 50px;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    padding-left: 20px;
+    border: 0.5px solid #F2F2F2;
+}
+.iconSize{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+}
+.iconColor{
+    color: #0065FC;
+}
+.buttonSearch{
+    width: 120px;
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:white;
+    cursor: pointer;
+}
+/*Filtre*/
+.margeFiltre {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.filtre {
+    display: flex;
+    align-items: center;
+}
+.margeFiltreLabel {
+    margin-right: 20px;
+}
+.filtreTexteIcone {
+    border: 2px solid #f2f2f2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.filtreTexteIcone:hover > .filtreTexte{
+    color: #0065FC;
+}
+.filtreTexteIcone:hover > .filtreIcones{
+    color: white;
+    background-color: #0065FC;
+}
+.filtreTexte{
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+}
+.filtreIcones {
+    margin-left: -2px;
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065FC;
+    background-color: #deebff;
+}
