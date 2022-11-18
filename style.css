@@ -20,19 +20,18 @@ p a{
 }
 .flexAround {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
 }
 .flexBetween {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 .flexCenter {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 .decoration {
     text-decoration: none;
@@ -57,6 +56,10 @@ p a{
 }
 .borderNone{
     border: none;
+}
+.iconColor{
+    color: #0065FC;
+    margin-right: 10px;
 }
 /*HEADER*/
 header{
@@ -89,71 +92,119 @@ header a:hover{
 }
 /*MAIN*/
 /*Recherche*/
-.borderSearch{
+#borderSearch{
     width: 400px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.inputSearch{
+#inputSearch{
     width: 230px;
     height: 50px;
     font-size: medium;
     font-weight: bold;
     color: black;
     padding-left: 20px;
+    border: none;
     border: 0.5px solid #F2F2F2;
 }
-.iconSize{
+#iconSize{
     width: 50px;
     height: 50px;
     border-radius: 10px 0 0 10px;
-}
-.iconColor{
-    color: #0065FC;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .buttonSearch{
-    width: 120px;
     height: 50px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    border: none;
     color:white;
+    font-weight: bold;
+    background-color: #0065FC;
     cursor: pointer;
-}
-/*Filtre*/
-.margeFiltre {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.filtre {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.margeFiltreLabel {
+.iconSearch{
+    visibility: hidden;
+    width: 0;
+}
+.textSearch{
+    visibility: visible;
+    width: 120px;
+}
+/*Filtre*/
+#filter {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 20px;
+}
+.filterTitle{
     margin-right: 20px;
+    font-weight: bold;
 }
-.filtreTexteIcone {
-    border: 2px solid #f2f2f2;
+#AllChoice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filterChoice {
+    border: 3px solid #F2F2F2;
     height: 50px;
     border-radius: 30px;
     margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.filtreTexteIcone:hover > .filtreTexte{
-    color: #0065FC;
+.filterChoice:hover {
+    background-color: #deebff;
 }
-.filtreTexteIcone:hover > .filtreIcones{
-    color: white;
-    background-color: #0065FC;
+.filterChoice:hover > .filterIcons{
+    background-color: #deebff;
 }
-.filtreTexte{
+.filterText{
     height: 50px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 0 25px 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.filtreIcones {
-    margin-left: -2px;
+.filterIcons {
+    margin-left: 1px;
     border-radius: 25px;
     width: 52px;
     height: 52px;
     color: #0065FC;
-    background-color: #deebff;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filterInfo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+}
+.info{
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #F2F2F2;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

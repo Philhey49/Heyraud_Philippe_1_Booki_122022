@@ -25,25 +25,37 @@
         <section id="Recherche">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <form class="flexCenter borderSearch">
-                <div  class="iconSize flexCenter backGrey"><i class="fa-solid fa-location-dot"></i></div>
-                <div><input type="search" value="Marseille, France"  class="inputSearch borderNone"></div>
-                <div class="buttonSearch flexCenter backBlue">Rechercher</div>
-                <div class="buttonSearch flexCenter backBlue"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <form id="borderSearch">
+                <div  id="iconSize"><i class="fa-solid fa-location-dot"></i></div>
+                <div><input type="search" value="Marseille, France"  id="inputSearch"></div>
+                <button class="buttonSearch textSearch">Rechercher</button>
+                <button class="buttonSearch iconSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
-            <div class="filtre margeFiltre">
-                <div class="margeFiltreLabel"><h2>Filtres</h2></div>
-                <div class="flexBetween filtreTexteIcone">
-                    <i class="fa-solid fa-money-bill-wave fa-lg filtreIcones flexCenter"></i><div class="filtreTexte flexCenter">Economique</div>
-                    <i class="fa-solid fa-child filtreIcones fa-lg flexCenter"></i><div class="filtreTexte flexCenter">Familial</div>
-                    <i class="fa-solid fa-heart filtreIcones fa-lg flexCenter"></i><div class="filtreTexte flexCenter">Romantique</div>
-                    <i class="fa-solid fa-dog filtreIcones fa-lg flexCenter"></i><div class="filtreTexte flexCenter">Animaux autorisés</div>
+            <div id="filter">
+                <div class="filterTitle"><h2>Filtres</h2></div>
+                <div id="AllChoice">
+                    <div class="filterChoice">
+                        <i class="fa-solid fa-money-bill-wave fa-lg filterIcons"></i>
+                        <div class="filterText"></i>Economique</div>
+                    </div>
+                    <div class="filterChoice">
+                        <i class="fa-solid fa-child fa-lg filterIcons"></i>
+                        <div class="filterText">Familial</div>
+                    </div>
+                    <div class="filterChoice">
+                        <i class="fa-solid fa-heart fa-lg filterIcons"></i>
+                        <div class="filterText">Romantique</div>
+                    </div>
+                    <div class="filterChoice">
+                        <i class="fa-solid fa-dog fa-lg filterIcons"></i>
+                        <div class="filterText">Animaux autorisés</div>
+                    </div>    
                 </div>
             </div>
-                <div>
-                    <p><i class="fa-solid fa-info iconeColor"></i> Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
-            
+            <div class="filterInfo">
+                <i class="fa-solid fa-info iconColor info"></i>
+                <p> Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </section>
         <section id="Hébergements">
             <h2 >Hébergements à Marseille</h2>
