@@ -10,10 +10,12 @@ h2{
     color: black;
 }
 h3{
-    font-size: medium;
+    font-size: small;
+    color: black;
 }
 p{
     color: grey;
+    font-size: small;
 }
 p a{
     color: grey;
@@ -27,11 +29,6 @@ p a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.flexCenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .decoration {
     text-decoration: none;
@@ -66,6 +63,11 @@ header{
     height: auto;
     min-width: 992px;
 }
+.headerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 header nav{
     justify-content: flex-end;
     padding: 10px;
@@ -91,6 +93,7 @@ header a:hover{
     padding: 10px;
 }
 /*MAIN*/
+
 /*Recherche*/
 #borderSearch{
     width: 400px;
@@ -207,4 +210,150 @@ header a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/*Encadrement Hébergements et les plus populaires*/
+.desktop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*Hébergements*/
+#Hébergements{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    margin: none;
+    padding: 1%;
+    max-width: 63.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.paddingh{
+    padding-left: 1.1%;
+}
+#HébergementsMarseille{
+    border-radius: 10px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: stretch;
+}
+img{
+    width: 99.5%;
+    height: 55%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.contain{
+    object-fit: cover;
+}
+.cardLodging{
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: 2px solid white;
+    padding: 0.5%;
+    margin: 1.1%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.fa-grey{
+    color: #F2F2F2;
+}
+/*Les plus populaires*/
+#Lespluspopulaires{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 1.6%;
+    width: 29.4%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: stretch;
+}
+.cardsPopular{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cardPopular{
+    width: 96%;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: 2px solid white;
+    padding: 0.5%;
+    margin: 1.1%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#Lespluspopulaires img{
+    width: 100%;
+    height: 146px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+}
+#Lespluspopulaires .contain{
+    object-fit: cover;
+    width: 146px;
+}
+.caption {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    padding-left: 10px;
+    height: 150px;
+}
+/*Activités*/
+#Activités{
+    background-color: white;
+    margin: 3% 0;
+    padding: none;
+}
+#ActivitésMarseille{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: stretch;
+    border-radius: 10px;
+    border-color: 2px solid white;
+}
+.cardActivity{
+    width: 20%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: 2px solid white;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#Activités img{
+    width: 100%;
+    height: 85%;
+}
+#Activités h3{
+    padding: 0 20px 0 20px;
+    margin-top: 20px;
+}
+/*Footer*/
+.footer{
+    background-color: #F2F2F2;
+}
+.mainfooter{
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3%;
 }
