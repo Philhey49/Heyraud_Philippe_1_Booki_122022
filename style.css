@@ -217,12 +217,12 @@ header a:hover{
 #Lodgings{
     background-color: #F2F2F2;
     border-radius: 10px;
-    margin: none;
+    margin: 0;
     padding: 1%;
     max-width: 63.5%;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: normal;
     justify-content: center;
 }
 /* padding du titre */
@@ -258,7 +258,9 @@ img{
     height: 200px;
     background-color: white;
     border-radius: 10px;
-    border-color: 2px solid white;
+    border-width: 2px ;
+    border-style: solid;
+    border-color: white;
     padding: 0.5%;
     margin: 1.1%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -302,7 +304,9 @@ img{
     height: 150px;
     background-color: white;
     border-radius: 10px;
-    border-color: 2px solid white;
+    border-width: 2px ;
+    border-style: solid;
+    border-color: white;
     padding: 0.5%;
     margin: 1.1%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -327,7 +331,7 @@ img{
 .caption {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: normal;
     justify-content: space-between;
     padding-left: 10px;
     height: 150px;
@@ -337,7 +341,7 @@ img{
 #Activitys{
     background-color: white;
     margin: 3% 0;
-    padding: none;
+    padding: 0;
 }
 /* article "Activités à Marseille" */
 #MarseilleActivitys{
@@ -347,7 +351,9 @@ img{
     align-content: stretch;
     justify-content: stretch;
     border-radius: 10px;
-    border-color: 2px solid white;
+    border-width: 2px ;
+    border-style: solid;
+    border-color: white;
 }
 /* carte Activité */
 .cardActivity{
@@ -355,7 +361,9 @@ img{
     height: 400px;
     background-color: white;
     border-radius: 10px;
-    border-color: 2px solid white;
+    border-width: 2px ;
+    border-style: solid;
+    border-color: white;
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -395,7 +403,7 @@ img{
         font-size: small;
         padding-left: 0px;
         padding-right: 12px;
-        align-items: left;
+        align-items: center;
         justify-content: flex-start;
     }
     .desktop{
@@ -447,7 +455,7 @@ img{
         border-bottom: 1px solid #0065FC;
         padding-bottom: 10px;
         border-top: none;
-        padding-top: none;
+        padding-top: 0;
     } 
     #borderSearch{
         width: 100%;
@@ -493,8 +501,8 @@ img{
     }
     .filterChoice{
         width: 47%;
-        align-items: flex-start;
-        align-content: flex-start;
+        align-items: center;
+        align-content: center;
         justify-content: flex-start;
         margin: 0;
         margin-bottom: 10px;
@@ -502,7 +510,7 @@ img{
     .filterText{
         font-size: small;
         padding: 0;
-        align-items: left;
+        align-items: center;
         justify-content: flex-start;
     }
     .desktop{
