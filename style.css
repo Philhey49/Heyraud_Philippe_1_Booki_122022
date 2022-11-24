@@ -1,8 +1,6 @@
 body{
     font-family: 'Raleway', sans-serif;
     max-width: 1400px;
-    padding: none;
-    margin: none;
 }
 h1{
     font-size: large;
@@ -32,10 +30,11 @@ p a{
     color: #0065FC;
     margin-right: 10px;
 }
-/*HEADER*/
+/* HEADER */
 header{
     height: auto;
 }
+/* gestion de la navigation */
 .nav {
     display: flex;
     align-items: center;
@@ -64,19 +63,19 @@ header a:hover{
     color: #0065FC;
     padding-top: 10px;
 }
+/* gestion du logo */
 #logo img{
     width: 62px;
     height: 29px;
     margin: auto;
     padding: 10px;
 }
-/*MAIN*/
-
-/*Search*/
+/* section recherche */
 #Search{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+/* gestion de la bordure */
 #borderSearch{
     width: 400px;
     border-radius: 10px;
@@ -84,6 +83,7 @@ header a:hover{
     align-items: center;
     justify-content: center;
 }
+/* champ de recherche*/
 #inputSearch{
     width: 230px;
     height: 50px;
@@ -94,6 +94,7 @@ header a:hover{
     border: none;
     border: 0.5px solid #F2F2F2;
 }
+/* taille de l'icône */
 #iconSize{
     width: 50px;
     height: 50px;
@@ -103,6 +104,7 @@ header a:hover{
     align-items: center;
     justify-content: center;
 }
+/* bouton de recherche*/
 .buttonSearch{
     height: 50px;
     border-top-right-radius: 10px;
@@ -116,10 +118,12 @@ header a:hover{
     align-items: center;
     justify-content: center;
 }
+/* visibilité du bouton pour la version mobile */
 .iconSearch{
     visibility: hidden;
     width: 0;
 }
+/* visibilité du bouton pour les versions desktop et tablette */
 .textSearch{
     visibility: visible;
     width: 120px;
@@ -133,15 +137,18 @@ header a:hover{
     margin-bottom: 50px;
     padding-right: 20px;
 }
+/* Titre du filtre */
 .filterTitle{
     margin-right: 20px;
     font-weight: bold;
 }
+/* gestion des filtres */
 #AllChoice{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* filtre choisi */
 .filterChoice {
     border: 3px solid #F2F2F2;
     height: 50px;
@@ -151,12 +158,15 @@ header a:hover{
     align-items: center;
     justify-content: center;
 }
+/* couleur du fond du filtre choisi */
 .filterChoice:hover {
     background-color: #deebff;
 }
+/* couleur du fond du filtre choisi partie icône */
 .filterChoice:hover > .filterIcons{
     background-color: #deebff;
 }
+/* texte du filtre */
 .filterText{
     height: 50px;
     padding-left: 20px;
@@ -166,6 +176,7 @@ header a:hover{
     align-items: center;
     justify-content: center;
 }
+/* icône du filtre*/
 .filterIcons {
     margin-left: 1px;
     border-radius: 25px;
@@ -177,12 +188,14 @@ header a:hover{
     align-items: center;
     justify-content: center;
 }
+/* partie info suivant le filtre */
 .filterInfo{
     display: flex;
     align-items: center;
     justify-content: left;
     flex-direction: row;
 }
+/* vecteur i de l'info */
 .info{
     border-radius: 25px;
     width: 30px;
@@ -200,6 +213,7 @@ header a:hover{
     justify-content: space-between;
 }
 /*Hébergements*/
+/* section hébergements */
 #Lodgings{
     background-color: #F2F2F2;
     border-radius: 10px;
@@ -211,12 +225,15 @@ header a:hover{
     align-items: left;
     justify-content: center;
 }
+/* padding du titre */
 .paddingh{
     padding-left: 1.1%;
 }
+/* article hébergements à Marseille */
 #MarseilleLodgings{
     border-radius: 10px;
 }
+/* gestion des cartes */
 .cards{
     display: flex;
     flex-direction: row;
@@ -224,15 +241,18 @@ header a:hover{
     align-content: stretch;
     justify-content: stretch;
 }
+/* gestion de l'image de la carte */
 img{
     width: 99.5%;
     height: 55%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+/* contenant de l'image */
 .container{
     object-fit: cover;
 }
+/* carte hébergement */
 .cardLodging{
     width: 30%;
     height: 200px;
@@ -243,13 +263,16 @@ img{
     margin: 1.1%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+/* texte de la carte hébergement */
 .captionLodgings{
     padding-left: 10px;
 }
+/* couleur de l'étoile désactivée */
 .fa-grey{
     color: #F2F2F2;
 }
 /*Les plus populaires*/
+/* section "les plus populaires" */
 #MostPopular{
     background-color: #F2F2F2;
     border-radius: 10px;
@@ -261,16 +284,19 @@ img{
     align-content: stretch;
     justify-content: stretch;
 }
+/* partie Titre de la section "les plus populaires" */
 .TitlePopular {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+/* Ensemble des cartes */
 .cardsPopular{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+/* carte "les plus populaires" */
 .cardPopular{
     width: 96%;
     height: 150px;
@@ -284,6 +310,7 @@ img{
     flex-direction: row;
     align-items: center;
 }
+/* gestion de l'image de la carte */
 #MostPopular img{
     width: 100%;
     height: 146px;
@@ -291,10 +318,12 @@ img{
     border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
 }
+/* contenant de l'image */
 #MostPopular .container{
     object-fit: cover;
     width: 146px;
 }
+/* texte de la carte */
 .caption {
     display: flex;
     flex-direction: column;
@@ -304,11 +333,13 @@ img{
     height: 150px;
 }
 /*Activités*/
+/* section Activités */ 
 #Activitys{
     background-color: white;
     margin: 3% 0;
     padding: none;
 }
+/* article "Activités à Marseille" */
 #MarseilleActivitys{
     display: flex;
     flex-direction: row;
@@ -318,6 +349,7 @@ img{
     border-radius: 10px;
     border-color: 2px solid white;
 }
+/* carte Activité */
 .cardActivity{
     width: 20%;
     height: 400px;
@@ -327,26 +359,31 @@ img{
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+/* gestion de l'image de la carte */
 #Activitys img{
     width: 100%;
     height: 85%;
 }
+/* gestion du texte de la carte */
 #Activitys h3{
     padding: 0 20px 0 20px;
     margin-top: 20px;
 }
 /*Footer*/
+/* couleur de fond du bas de page */
 .footer{
     background-color: #F2F2F2;
 }
+/* gestion des colonnes du bas de page */
 .mainfooter{
-    max-width: 70%;
+    max-width: 75%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     padding: 3%;
 } 
+/* gestion du mode tablette */
 @media only screen and (min-width: 768px) and (max-width: 991px){
     #filter {
         padding-right: 10px
@@ -398,6 +435,7 @@ img{
         border-top-right-radius: 10px;
     }
 }
+/* gestion du mode mobile */
 @media only screen and (max-width: 767px){
     .headerNav {
         display: flex;
@@ -416,6 +454,7 @@ img{
         align-items: flex-start;
         justify-content: stretch;
     }
+    /* changement d'ordre des boutons */
     #borderSearch :nth-child(4){
         order: 3;
     }
@@ -425,6 +464,7 @@ img{
     #inputSearch{
         width: auto;
     }
+    /* visibilité des boutons */
     .iconSearch{
         visibility: visible;
         width: 50px;
@@ -470,7 +510,6 @@ img{
         flex-direction: column-reverse;
         justify-content: flex-start;
     }
-
     #MostPopular{
         display: flex;
         flex-direction: column;

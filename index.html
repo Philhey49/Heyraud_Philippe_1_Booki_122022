@@ -12,30 +12,39 @@
     <title>Agence de voyage BOOKI</title>
 </head>
 <body>
-    <header class="headerNav">
+    <!-- l'ensemble header et nav -->    
+    <header class="headerNav"> 
         <figure id="logo">
             <img src="Images/logo/Booki.png" alt="logo_Booki">
         </figure>
         <nav>
+        <!-- navigation vers les sections hébergements et Activités -->            
             <ul class="nav">
                 <li><a href="#Lodgings" class="decoration">Hébergements</a></li>
                 <li><a href="#Activitys" class="decoration">Activités</a></li>
             </ul>
         </nav>
     </header>
+    <!-- partie principale de la page -->
     <main>
-        <section id="Search">
+        <!-- section recherche -->
+        <section id="Search"> 
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <form id="borderSearch">
+            <!-- recherche du lieu souhaité -->
+            <form id="borderSearch"> 
                 <div  id="iconSize"><i class="fa-solid fa-location-dot"></i></div>
                 <div><input type="search" value="Marseille, France"  id="inputSearch"></div>
+                <!-- bouton pour les versions desktop et tablette -->
                 <button class="buttonSearch textSearch">Rechercher</button>
+                <!-- bouton pour la version mobile --> 
                 <button class="buttonSearch iconSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
-            <div id="filter">
+            <!-- partie filtres -->
+            <div id="filter"> 
                 <div class="filterTitle"><h2>Filtres</h2></div>
-                <div id="AllChoice">
+                <!-- définition des filtres -->
+                <div id="AllChoice"> 
                     <div class="filterChoice">
                         <i class="fa-solid fa-money-bill-wave fa-lg filterIcons"></i>
                         <div class="filterText">Economique</div>
@@ -54,23 +63,32 @@
                     </div>    
                 </div>
             </div>
-            <div class="filterInfo">
+            <!-- info de fin de section -->
+            <div class="filterInfo"> 
                 <i class="fa-solid fa-info iconColor info"></i>
                 <p> Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
+        <!-- Contenant englobant la section "hébergements" et "les plus populaires"-->
         <div class="desktop">
-            <section id="Lodgings">
+            <!-- section hébergements -->
+            <section id="Lodgings"> 
                 <h2 class="paddingh">Hébergements à Marseille</h2>
-                <article id="MarseilleLodgings">              
+                <!-- article hébergements à Marseille -->
+                <article id="MarseilleLodgings">
+                    <!-- Ensemble des cartes -->             
                     <div class="cards">
+                        <!-- création d'une carte --> 
                         <figure class="cardLodging">
+                            <!-- gestion de l'image --> 
                             <a href="#"><img class="container" src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                 alt="Auberge de la Canebière"></a>
-                            <figcaption class="captionLodgings">
+                            <!-- texte de la carte -->   
+                            <figcaption class="captionLodgings"> 
                                 <h3>Auberge de la Canebière</h3>
                                 <p>Nuit à partir de 25€</p>
-                                <div class="iconColor">
+                                <!-- gestion des étoiles -->
+                                <div class="iconColor"> 
                                     <i class="fa-sharp fa-solid fa-xs fa-star"></i>
                                     <i class="fa-sharp fa-solid fa-xs fa-star"></i>
                                     <i class="fa-sharp fa-solid fa-xs fa-star"></i>
@@ -157,14 +175,18 @@
                     </div>
                     <a href="#" class="decoration"><h3 class="paddingh">Afficher plus</h3></a>
                 </article>
-            </section>    
+            </section>
+            <!-- positionnement de la section "les plus populaires"-->    
             <aside id="MostPopular">
-                <div class="TitlePopular">
+                <!-- gestion du titre et de son icône --> 
+                <div class="TitlePopular"> 
                     <h2 class="paddingh">Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line fa-lg iconColor"></i>
                 </div>
+                <!-- Ensemble des cartes -->
                 <div class="cardsPopular">
-                    <figure class="cardPopular">
+                    <!-- création d'une carte "les plus populaires" --> 
+                    <figure class="cardPopular"> 
                         <a href="#"><img  class="container" src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                             alt="Hôtel Le soleil du matin"></a>
                         <figcaption class="caption">
@@ -218,9 +240,11 @@
                 </div>
             </aside>
         </div>
-        <section id="Activitys">
+        <!--section Activités -->
+        <section id="Activitys"> 
             <h2 class="paddingh">Activités à Marseille</h2>
-            <article id="MarseilleActivitys">
+            <!-- article "Activités à Marseille" -->
+            <article id="MarseilleActivitys"> 
                 <figure class="cardActivity">
                     <a href="#"><img class="container" src="Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-port"></a>
                     <figcaption><h3>Vieux-port</h3></figcaption>
@@ -240,8 +264,10 @@
             </article>
         </section>
     </main>
+    <!-- bas de page -->
     <footer class="footer">
-        <div class="mainfooter">
+        <!-- gestion des colonnes --> 
+        <div class="mainfooter"> 
             <div>
                 <h2>A propos</h2>
                 <p><a href="#" class="decoration">Fonctionnement du site</a></p>
