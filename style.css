@@ -1,24 +1,29 @@
 body{
     font-family: 'Raleway', sans-serif;
     max-width: 1400px;
+    margin: auto;
+    font-size: 1em;
 }
 h1{
-    font-size: large;
+    font-size: 24px;
 }
 h2{
-    font-size: medium;
+    font-size: 20px;
     color: black;
 }
 h3{
-    font-size: small;
+    font-size: 12px;
     color: black;
 }
 p{
     color: grey;
-    font-size: x-small;
+    font-size: 12px;
+}
+.desktop p{
+    font-size: 12px;
 }
 a{
-    font-size: small; 
+    font-size: 12px; 
 }
 p a{
     color: grey;
@@ -30,45 +35,70 @@ p a{
     color: #0065FC;
     margin-right: 10px;
 }
+nav, .nav, .headerNav, #logo, #borderSearch, #iconSize, .buttonSearch, #filter, #AllChoice, .filterChoice, .filterText, .filterIcons, .filterInfo, .info{
+    display: flex;
+}
 /* HEADER */
 header{
     height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 /* gestion de la navigation */
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.headerNav {
-    display: flex;
-    align-items: flex-start;
+nav{
+    width: 25%;
+    align-items: flex-end;
+    align-content: center;
     justify-content: space-between;
 }
-header nav{
-    justify-content: flex-end;
-    padding: 10px;
+.headerNav {
+    align-items: flex-start;
+    align-content: center;
+    justify-content: space-between;
 }
 header ul{
     list-style: none;
+    width: 100%;
+    padding-inline-start: 0px;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
-header li {
-    margin-right: 50px;
+header li{
+    width: 50%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+header li:hover{
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
 }
 header a{
     color: black;
 }
 header a:hover{
-    border-top: 1px solid #0065FC;
     color: #0065FC;
-    padding-top: 10px;
 }
 /* gestion du logo */
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    padding-top: 20px;
+}
 #logo img{
-    width: 62px;
-    height: 29px;
-    margin: auto;
-    padding: 10px;
+    width: 64px;
+    margin: 0%;
+    padding: 0%;
+}
+main{
+    margin: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 /* section recherche */
 #Search{
@@ -79,7 +109,6 @@ header a:hover{
 #borderSearch{
     width: 400px;
     border-radius: 10px;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -100,7 +129,6 @@ header a:hover{
     height: 50px;
     border-radius: 10px 0 0 10px;
     background-color: #f2f2f2;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -114,7 +142,6 @@ header a:hover{
     font-weight: bold;
     background-color: #0065FC;
     cursor: pointer;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -130,21 +157,19 @@ header a:hover{
 }
 /*Filtre*/
 #filter {
-    display: flex;
     align-items: center;
     justify-content: left;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 /* Titre du filtre */
 .filterTitle{
-    margin-right: 20px;
+    margin-right: 15px;
     font-weight: bold;
 }
 /* gestion des filtres */
 #AllChoice{
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -153,10 +178,10 @@ header a:hover{
     border: 3px solid #F2F2F2;
     height: 50px;
     border-radius: 30px;
-    margin-right: 20px;
-    display: flex;
+    margin-right: 10px;
+    padding-right: 0px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 /* couleur du fond du filtre choisi */
 .filterChoice:hover {
@@ -169,12 +194,14 @@ header a:hover{
 /* texte du filtre */
 .filterText{
     height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 10px;
+    margin-left: 0px;
     border-radius: 0 25px 25px 0;
-    display: flex;
+    font-size: 12px;
+    font-weight: bold;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 /* icône du filtre*/
 .filterIcons {
@@ -182,18 +209,20 @@ header a:hover{
     border-radius: 25px;
     width: 52px;
     height: 52px;
+    margin-right: 0px;
+    padding-right: 0px;
     color: #0065FC;
     background-color: white;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 /* partie info suivant le filtre */
 .filterInfo{
-    display: flex;
     align-items: center;
     justify-content: left;
     flex-direction: row;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 /* vecteur i de l'info */
 .info{
@@ -202,13 +231,15 @@ header a:hover{
     height: 30px;
     border: 2px solid #F2F2F2;
     background-color: white;
-    display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 4px;
 }
 /*Encadrement Hébergements et les plus populaires*/
-.desktop{
+.desktop, #Lodgings, .cards, #MostPopular, .TitlePopular, .cardsPopular, .cardPopular, .caption, #MarseilleActivitys, .mainfooter {
     display: flex;
+}
+.desktop{
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -220,7 +251,6 @@ header a:hover{
     margin: 0;
     padding: 1%;
     max-width: 63.5%;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -235,7 +265,6 @@ header a:hover{
 }
 /* gestion des cartes */
 .cards{
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: stretch;
@@ -280,7 +309,6 @@ img{
     border-radius: 10px;
     padding: 1.6%;
     width: 29.4%;
-    display: flex;
     flex-direction: column;
     align-items: stretch;
     align-content: stretch;
@@ -288,13 +316,11 @@ img{
 }
 /* partie Titre de la section "les plus populaires" */
 .TitlePopular {
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 /* Ensemble des cartes */
 .cardsPopular{
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -310,7 +336,6 @@ img{
     padding: 0.5%;
     margin: 1.1%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    display: flex;
     flex-direction: row;
     align-items: center;
 }
@@ -329,7 +354,6 @@ img{
 }
 /* texte de la carte */
 .caption {
-    display: flex;
     flex-direction: column;
     align-items: normal;
     justify-content: space-between;
@@ -345,26 +369,29 @@ img{
 }
 /* article "Activités à Marseille" */
 #MarseilleActivitys{
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: stretch;
-    justify-content: stretch;
+    justify-content: space-between;
     border-radius: 10px;
     border-width: 2px ;
     border-style: solid;
     border-color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 /* carte Activité */
 .cardActivity{
-    width: 20%;
+    width: 23%;
     height: 400px;
     background-color: white;
     border-radius: 10px;
     border-width: 2px ;
     border-style: solid;
     border-color: white;
-    margin: 0 auto;
+    margin: 0;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 /* gestion de l'image de la carte */
@@ -381,11 +408,13 @@ img{
 /* couleur de fond du bas de page */
 .footer{
     background-color: #F2F2F2;
+    margin: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 /* gestion des colonnes du bas de page */
 .mainfooter{
     max-width: 75%;
-    display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
@@ -393,6 +422,13 @@ img{
 } 
 /* gestion du mode tablette */
 @media only screen and (min-width: 768px) and (max-width: 991px){
+    header li:hover{
+        border-bottom: 0px;
+        border-top: 0px;
+    } 
+    header a:hover{
+        color: black;
+    }
     #filter {
         padding-right: 10px
     }
@@ -400,14 +436,13 @@ img{
         margin-right: 10px;
     }
     .filterText{
-        font-size: small;
+        font-size: 12px;
         padding-left: 0px;
-        padding-right: 12px;
+        padding-right: 5px;
         align-items: center;
-        justify-content: flex-start;
+        align-content: flex-start;
     }
     .desktop{
-        display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -418,7 +453,6 @@ img{
         margin-bottom: 20px;
     }
     #MostPopular{
-        display: flex;
         flex-direction: column;
         width: 100%;
     }
@@ -427,7 +461,6 @@ img{
         width: 70px;
     }
     .cardsPopular{
-        display: flex;
         flex-direction: row;
     }
     .cardPopular{
@@ -446,17 +479,26 @@ img{
 /* gestion du mode mobile */
 @media only screen and (max-width: 767px){
     .headerNav {
-        display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
-    header a:hover{
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    header li:hover{
         border-bottom: 1px solid #0065FC;
-        padding-bottom: 10px;
-        border-top: none;
-        padding-top: 0;
+        border-top: 0px;
+        color: #0065FC;
     } 
+    #logo{
+        justify-content: center;
+        margin: 0px;
+        padding-top: 20px;
+    }
     #borderSearch{
         width: 100%;
         align-items: flex-start;
@@ -508,24 +550,21 @@ img{
         margin-bottom: 10px;
     }
     .filterText{
-        font-size: x-small;
+        font-size: 10px;
         padding: 0;
         align-items: center;
         justify-content: flex-start;
     }
     .desktop{
-        display: flex;
         flex-direction: column-reverse;
         justify-content: flex-start;
     }
     #MostPopular{
-        display: flex;
         flex-direction: column;
         border-radius: 0;
         width: 100%;
     }
     #Lodgings{
-        display: flex;
         flex-direction: column;
         max-width: none;
         width: 100%;
@@ -543,7 +582,6 @@ img{
         margin-bottom: 40px;
     }
     #MarseilleActivitys{
-        display: flex;
         flex-direction: column;
     }
     .cardActivity{
@@ -558,7 +596,6 @@ img{
         border-top-right-radius: 10px;
     }
     .mainfooter{
-        display: flex;
         flex-direction: column;
     }
 }
