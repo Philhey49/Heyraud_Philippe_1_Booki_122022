@@ -39,7 +39,8 @@ p a{
     color: #0065FC;
     margin-right: 10px;
 }
-nav, .nav, .headerNav, #logo, #borderSearch, #iconSize, .buttonSearch, #filter, #AllChoice, .filterChoice, .filterText, .filterIcons, .filterInfo, .info{
+/*Refactorisation flexbox répétitif*/
+nav, .nav, .headerNav, #logo, #borderSearch, #iconSize, .buttonSearch, #filter, #AllChoice, .filterChoice, .filterText, .filterIcons, .filterInfo, .info, .desktop, #Lodgings, .cards, #MostPopular, .TitlePopular, .cardsPopular, .cardPopular, .caption, #MarseilleActivitys, .mainfooter {
     display: flex;
 }
 nav, .headerNav {
@@ -238,9 +239,6 @@ main{
     margin-right: 4px;
 }
 /*Encadrement Hébergements et les plus populaires*/
-.desktop, #Lodgings, .cards, #MostPopular, .TitlePopular, .cardsPopular, .cardPopular, .caption, #MarseilleActivitys, .mainfooter {
-    display: flex;
-}
 .desktop{
     flex-wrap: wrap;
 }
