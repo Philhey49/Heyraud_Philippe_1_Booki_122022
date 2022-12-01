@@ -42,6 +42,15 @@ p a{
 nav, .nav, .headerNav, #logo, #borderSearch, #iconSize, .buttonSearch, #filter, #AllChoice, .filterChoice, .filterText, .filterIcons, .filterInfo, .info{
     display: flex;
 }
+nav, .headerNav {
+    align-content: center;
+}
+nav, .headerNav, .filterChoice, .desktop, .TitlePopular, .caption, #MarseilleActivitys, .mainfooter {
+    justify-content: space-between;
+}
+#logo, #borderSearch, #iconSize, .buttonSearch, #AllChoice, .filterIcons, .info, #Lodgings {
+    justify-content: center;
+}
 /* HEADER */
 header{
     height: auto;
@@ -55,13 +64,9 @@ header{
 nav{
     width: 25%;
     align-items: flex-end;
-    align-content: center;
-    justify-content: space-between;
 }
 .headerNav {
     align-items: flex-start;
-    align-content: center;
-    justify-content: space-between;
 }
 header ul{
     list-style: none;
@@ -90,7 +95,6 @@ header a:hover{
 #logo{
     display: flex;
     align-items: center;
-    justify-content: center;
     margin: 0%;
     padding-top: 20px;
 }
@@ -115,7 +119,6 @@ main{
     width: 400px;
     border-radius: 10px;
     align-items: center;
-    justify-content: center;
 }
 /* champ de recherche*/
 #inputSearch{
@@ -135,7 +138,6 @@ main{
     border-radius: 10px 0 0 10px;
     background-color: #f2f2f2;
     align-items: center;
-    justify-content: center;
 }
 /* bouton de recherche*/
 .buttonSearch{
@@ -148,7 +150,6 @@ main{
     background-color: #0065FC;
     cursor: pointer;
     align-items: center;
-    justify-content: center;
 }
 /* visibilité du bouton pour la version mobile */
 .iconSearch{
@@ -176,7 +177,6 @@ main{
 /* gestion des filtres */
 #AllChoice{
     align-items: center;
-    justify-content: center;
 }
 /* filtre choisi */
 .filterChoice {
@@ -186,7 +186,6 @@ main{
     margin-right: 10px;
     padding-right: 0px;
     align-items: center;
-    justify-content: space-between;
 }
 /* couleur du fond du filtre choisi */
 .filterChoice:hover {
@@ -219,7 +218,6 @@ main{
     color: #0065FC;
     background-color: white;
     align-items: center;
-    justify-content: center;
 }
 /* partie info suivant le filtre */
 .filterInfo{
@@ -237,7 +235,6 @@ main{
     border: 2px solid #F2F2F2;
     background-color: white;
     align-items: center;
-    justify-content: center;
     margin-right: 4px;
 }
 /*Encadrement Hébergements et les plus populaires*/
@@ -246,7 +243,6 @@ main{
 }
 .desktop{
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 /*Hébergements*/
 /* section hébergements */
@@ -258,7 +254,6 @@ main{
     max-width: 63.5%;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
 }
 /* padding du titre */
 .paddingh{
@@ -322,7 +317,6 @@ img{
 /* partie Titre de la section "les plus populaires" */
 .TitlePopular {
     align-items: center;
-    justify-content: space-between;
 }
 /* Ensemble des cartes */
 .cardsPopular{
@@ -363,7 +357,6 @@ img{
 .caption {
     flex-direction: column;
     align-items: normal;
-    justify-content: space-between;
     padding-left: 10px;
     height: 150px;
 }
@@ -379,7 +372,6 @@ img{
     flex-direction: row;
     flex-wrap: wrap;
     align-content: stretch;
-    justify-content: space-between;
     border-radius: 10px;
     border-width: 2px ;
     border-style: solid;
@@ -415,16 +407,15 @@ img{
 /* couleur de fond du bas de page */
 .footer{
     background-color: #F2F2F2;
-    margin: 2%;
-    padding-left: 1%;
-    padding-right: 1%;
+    margin: 3%;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 /* gestion des colonnes du bas de page */
 .mainfooter{
     max-width: 75%;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
     padding: 3%;
 } 
 /* gestion du mode tablette */
