@@ -16,7 +16,6 @@ h3{
     color: black;
 }
 p{
-    color: grey;
     font-size: 14px;
 }
 .desktop p{
@@ -29,7 +28,6 @@ a{
     font-size: 12px; 
 }
 p a{
-    color: grey;
     font-size: 14px;
 }
 .decoration {
@@ -88,6 +86,7 @@ header li:hover{
 }
 header a{
     color: black;
+    font-size: 14px;
 }
 header a:hover{
     color: #0065FC;
